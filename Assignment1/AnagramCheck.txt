@@ -1,0 +1,20 @@
+The purpose of this program is to compare two text inputs (strings) and determine if they are anagrams of each other.
+For example, given "hello world" and "dlrow olleh" the program will successfuly determine that they are anagrams,
+whereas given "test" and "1234", the program will express that those inputs are not anagrams.
+
+I decided to use a hashmap to determine if two strings were anagrams of eachother. First I save the entire first input
+into a hashmap, if there a duplicate I will increment the `value` part of the map. For example "hello" will look like...
+
+{
+    "h" : 1,
+    "e" : 1,
+    "l" : 2,
+    "o" : 1
+}
+
+Next I search my hashmap for each character of my second string and remove the entry from the hashmap. If I cannot find
+an entry I know that the two strings are not anagrams. Also, at the end of the program, if the hashmap is not empty, the
+the two strings were not anagrams.
+
+I cannot think of any design or programming issues. I had plenty of time to implement this program and am happy with its
+results.

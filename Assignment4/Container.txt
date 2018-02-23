@@ -1,6 +1,0 @@
-The purpose of this program is to convert a provided string and rows into a "zigzag" pattern. For example, given "ABCDEFGHIJKLMNO" and "5" the proram will convert the input string into  "AEIMBDFHJLNCGKO"
-
-I decided to use a StringBuilder to implement the ZigZag algorithm. I start by calculating the initial jump. The formula for a jump is (rows * 2) - 2. Once I start building the string using a loop, I have to check if I am building the first or the last row. These row are treated slightly different with a smaller jump. Next I alternate each column of the middle rows with different size jumps. At the end, I simply return my StringBuilder's string.
-
-I cannot think of any design or programming issues. I had plenty of time to implement this program and am happy with its
-results.

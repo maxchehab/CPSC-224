@@ -6,7 +6,7 @@ build: Test.java
 	javac Test.java
 
 clean: 
-	$(RM) Test.class
+	$(RM) *.class
 
 run: Test.class
 	java Test
